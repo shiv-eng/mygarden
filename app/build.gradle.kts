@@ -37,7 +37,7 @@ android {
     vectorDrawables.useSupportLibrary = true
 
     // Consult the README on instructions for setting up Unsplash API key
-    buildConfigField("String", "UNSPLASH_ACCESS_KEY", "\"ov6ZOZqZm0FXaPgbHIEIuswmDXRB_MsiBxV0xrQQ858" + getUnsplashAccess() + "\"")
+    buildConfigField("String", "UNSPLASH_ACCESS_KEY", "\"" + getUnsplashAccess() + "\"")
     javaCompileOptions {
       annotationProcessorOptions {
         arguments["dagger.hilt.disableModulesHaveInstallInCheck"] = "true"
